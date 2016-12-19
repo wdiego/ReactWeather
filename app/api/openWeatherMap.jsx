@@ -16,7 +16,7 @@ module.exports = {
         }
       })
       .catch(function (res) {
-        throw new Error(res.response.data.message);
+        throw new Error('Unable to fetch weather for that location.');
       });
   }
 };
